@@ -4,11 +4,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
     color: #fff;
     backdrop-filter: blur(5px);
     .content {
@@ -16,7 +15,6 @@
         border-radius: 10px;
         width: 70%;
         height: 50%;
-        border: 2px solid rebeccapurple;
         display: flex;
         justify-content: center;
         align-items: center;
