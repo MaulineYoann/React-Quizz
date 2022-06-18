@@ -25,6 +25,7 @@ const Quizz = () => {
 
   const handleSubmit = () => {
     if (current === questions.length && response) {
+      response.isCorrect === true && setScore((prevValue) => prevValue + 1);
       handleModal()
     } else {
       handleError();
@@ -86,7 +87,7 @@ const Quizz = () => {
         </aside>
       </section>
       {
-        showModal && <Modal score={score}/>
+        showModal && <Modal score={score} length={questions.length}/>
       }
     </main>
   );

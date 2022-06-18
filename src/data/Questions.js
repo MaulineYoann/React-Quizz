@@ -66,9 +66,9 @@ export const questions = [
         text: `Depuis 2020, quel état pourrait devenir le 51ème état des États-Unis ?`,
         option: [
             {id: 1, text: 'Cuba', isCorrect: false},
-            {id: 2, text: 'Le Costa Rica', isCorrect: false},
+            {id: 2, text: 'Le Costa Rica', isCorrect: true},
             {id: 3, text: 'Hawaï', isCorrect: false},
-            {id: 4, text: 'Le Canada', isCorrect: true}
+            {id: 4, text: 'Le Canada', isCorrect: false}
         ]
     },
     {
