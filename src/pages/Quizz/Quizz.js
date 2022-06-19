@@ -12,12 +12,9 @@ const Quizz = () => {
   const [showModal, setShowModal] = useState(false);
 
   let current = currentQuestion + 1;
-  const calc =  currentQuestion / questions.length + .1;
+  const progress =  currentQuestion / questions.length + .1;
 
-
-  const getResponse = (res) => {
-    setResponse(res);
-  }
+  const getResponse = (res) => setResponse(res);
 
   const handleError = () => {
     !response ? setError('Veuillez selectionner une réponse') : setError('');
@@ -37,7 +34,8 @@ const Quizz = () => {
 
   const showScore = () => (score > 1 ? 'Points' : 'Point');
 
-  const handleModal = () => setShowModal(!showModal)
+  const handleModal = () => setShowModal(!showModal);
+
   return (
     <main className="quizz">
       <button className='back'>
@@ -49,7 +47,7 @@ const Quizz = () => {
         <div className="progress">
           <div 
           className="bar"
-          style={{transform: `scaleX(${calc})`}}
+          style={{transform: `scaleX(${progress})`}}
           ></div>
         </div>
         <div className="info">
